@@ -1,51 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="computadora, perifericos, procesadores, gamer, gaming">
-    <meta name="keywords" content="perifericos, computadoras, gaming, gamer, notebooks">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="computadora, perifericos, procesadores, gamer, gaming">
+  <meta name="keywords" content="perifericos, computadoras, gaming, gamer, notebooks">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-perifericos.png" alt="logo" class="logo"></a>
-    <h1>PAGINA</h1>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="d-flex fixed" role="search">
-        <input class="form-control me-0 ms-5" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success ms-5" type="submit">Search</button>
-      </form>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"> 
-          <a href="" class="nav-link link-info ms-2">Log in</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-info ms-2" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ms-2 link-info" href="../pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-perifericos.png" alt="logo"
+            class="logo"></a>
+        <h1>PAGINA</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex fixed" role="search">
+            <input class="form-control me-0 ms-5" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success ms-5" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="" class="nav-link link-info ms-2">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-info ms-2" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2 link-info" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
+    <div class="principal container p-5">
+      <h1 w-100>Contact Us</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center p-5 subtitulo">Dejanos tus datos</h2>
+          <hr>
+          <form>
+            <div class="mb-3">
+              <label for="Nombre" required class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="Nombre" aria-describedby="Nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="Apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="Apellido" aria-describedby="Apellido" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie
+                más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="Motivo" class="form-label">Motivo</label>
+              <textarea class="form-control" id="Motivo" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Seleccione su provincia</option>
+                <option value="caba">Ciudad Autónoma de Buenos Aires</option>
+                <option value="buenos-aires">Buenos Aires</option>
+                <option value="catamarca">Catamarca</option>
+                <option value="chaco">Chaco</option>
+                <option value="chubut">Chubut</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="corrientes">Corrientes</option>
+                <option value="entre-rios">Entre Ríos</option>
+                <option value="formosa">Formosa</option>
+                <option value="jujuy">Jujuy</option>
+                <option value="la-pampa">La Pampa</option>
+                <option value="la-rioja">La Rioja</option>
+                <option value="mendoza">Mendoza</option>
+                <option value="misiones">Misiones</option>
+                <option value="neuquen">Neuquén</option>
+                <option value="rio-negro">Río Negro</option>
+                <option value="salta">Salta</option>
+                <option value="san-juan">San Juan</option>
+                <option value="san-luis">San Luis</option>
+                <option value="santa-cruz">Santa Cruz</option>
+                <option value="santa-fe">Santa Fe</option>
+                <option value="santiago-del-estero">Santiago del Estero</option>
+                <option value="tierra-del-fuego">Tierra del Fuego</option>
+                <option value="tucuman">Tucumán</option>
+              </select>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Al apretar este boton no sos un
+                robot</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <div class="col pb-5">
+          <h2 class="text-center p-5 subtitulo">Contactanos</h2>
+          <hr>
+          <p><strong>Telefono:</strong> 123456789</p>
+          <p><strong>Correo Electronico:</strong> 9e9Xn@example.com</p>
+          <p><strong>Direccion:</strong> 9 de Julio 836, san miguel de tucuman, tucuman</p>
+          <hr>
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="463" height="409" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=9+de+julio+836&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                scrolling="no" marginheight="0" marginwidth="0">
+                <style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 100%;
+                    width: 100%;
+                  }
+                </style>
+                <style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 100%;
+                    width: 100%;
+                  }
+                </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="horario">
-    <h3 class="h3">Horarios</h3>
-    <ul>Lunes-Viernes</ul>
-    <ul>9:30-20:00</ul>
+      <h3 class="h3">Horarios</h3>
+      <ul>Lunes-Viernes</ul>
+      <ul>9:30-20:00</ul>
     </div>
     <div class="terminos">
       <a href="">Terminos y condiciones</a>
@@ -57,6 +158,9 @@
       <ul>facebook</ul>
     </div>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
